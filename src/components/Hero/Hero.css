@@ -1,40 +1,22 @@
 .hero {
     position: relative;
     width: 100%;
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-    background-color: #013A4C; /* Rasm yuklanguncha fon rangi */
-    overflow: hidden;
-    padding: 120px 0 80px 0;
-}
-
-/* Orqa fon rasmi */
-.background__img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    height: 600px;
     background-image: url(./images/hero.png);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    z-index: 1;
+    margin-top: 71px;
+    align-items: center;
 }
 
-/* Matn va tugmalar joylashgan quti */
-.hero__container {
-    position: relative;
-    z-index: 2;
-    max-width: 650px;
-    margin-left: 0; /* Agar o'rtada bo'lishini xohlasangiz 'margin: 0 auto' qilishingiz mumkin */
-}
 
 .hero__box {
     display: flex;
+    width: 400px;
     flex-direction: column;
+    margin-right: 700px;
     gap: 20px;
+    text-align: left; 
 }
 
 .hero__box-title {
@@ -42,8 +24,8 @@
     font-weight: 700;
     font-size: 56px;
     line-height: 1.1;
-    color: #013A4C; /* Asosiy matn rangi (rasmingizga qarab o'zgartirishingiz mumkin) */
-    margin: 0;
+    color: #013A4C;
+    margin-top: 142px;
 }
 
 .hero__box-text {
@@ -52,70 +34,66 @@
     font-size: 18px;
     line-height: 1.5;
     color: #013A4C;
-    opacity: 0.85;
-    max-width: 500px;
-    margin: 0;
+    opacity: 0.9;
 }
 
-/* Tugmalar joylashuvi */
 .hero__btn-div {
     display: flex;
     gap: 15px;
     margin-top: 10px;
 }
 
-/* Umumiy tugma dizayni */
 .hero__btn {
     padding: 14px 28px;
     font-family: "Work Sans", sans-serif;
     font-weight: 500;
-    font-size: 16px;
-    border-radius: 10px;
+    font-size: 15px;
+    border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
-    border: 2px solid transparent;
+    white-space: nowrap;
 }
 
-/* 1-chi asosiy tugma (Get Oneflow free) */
 .hero__btn-primary {
     background-color: #013A4C;
     color: #ffffff;
+    border: 1px solid #013A4C;
 }
 
 .hero__btn-primary:hover {
-    background-color: #02556e;
-    transform: translateY(-3px);
-    box-shadow: 0px 8px 20px rgba(1, 58, 76, 0.3);
+    background-color: #025068;
+    transform: translateY(-2px);
 }
 
-/* 2-chi yordamchi tugma (Take a tour) */
 .hero__btn-secondary {
-    background-color: transparent;
+    background-color: #ffffff;
     color: #013A4C;
-    border-color: #013A4C;
+    border: 1px solid #013A4C;
+     background: linear-gradient(#013A4C 0 0) no-repeat calc(200% - var(--p, 0%)) 100% / 200% var(--p, 0.2em);
+    transition: 0.3s var(--t, 0s), background-position 0.3s calc(0.3s - var(--t, 0s)), border-color 0.3s;
 }
 
 .hero__btn-secondary:hover {
     background-color: #013A4C;
     color: #ffffff;
-    transform: translateY(-3px);
-    box-shadow: 0px 8px 20px rgba(1, 58, 76, 0.2);
+    transform: translateY(-2px);
+    --p: 100%;
+    --t: 0.2s;
 }
 
-/* --- RESPONSIVE (Mobil va planshetlar uchun) --- */
 @media (max-width: 768px) {
-    .hero {
-        min-height: 80vh;
-        padding: 100px 0 60px 0;
-        text-align: center;
+    .hero__container {
+        justify-content: center;
     }
 
-    .hero__container {
-        margin: 0 auto;
+    .hero {
+        text-align: center;
+        padding-top: 80px;
     }
 
     .hero__box {
         align-items: center;
+        text-align: center;
     }
 
     .hero__box-title {
@@ -129,7 +107,7 @@
     .hero__btn-div {
         flex-direction: column;
         width: 100%;
-        max-width: 300px;
+        max-width: 280px;
     }
 
     .hero__btn {

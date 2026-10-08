@@ -138,7 +138,6 @@
         transition: all 0.3s ease;
     }
 
-    /* Burger bosilganda menyu va tugmalar birga ochiladi */
     .header__nav.active {
         transform: translateY(0);
         opacity: 1;
