@@ -142,6 +142,7 @@
 
 @media (max-width: 650px) {
     .header__box-btn {
-        display: none; /* Juda kichik ekranlarda tugmalar menyu ichiga yoki yashirinadi */
+        display: none;
     }
-}
+} 
+    
