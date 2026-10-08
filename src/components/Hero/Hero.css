@@ -1,3 +1,138 @@
-.background__img{
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background-color: #013A4C; /* Rasm yuklanguncha fon rangi */
+    overflow: hidden;
+    padding: 120px 0 80px 0;
+}
+
+/* Orqa fon rasmi */
+.background__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url(./images/hero.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+/* Matn va tugmalar joylashgan quti */
+.hero__container {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+    margin-left: 0; /* Agar o'rtada bo'lishini xohlasangiz 'margin: 0 auto' qilishingiz mumkin */
+}
+
+.hero__box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero__box-title {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.1;
+    color: #013A4C; /* Asosiy matn rangi (rasmingizga qarab o'zgartirishingiz mumkin) */
+    margin: 0;
+}
+
+.hero__box-text {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #013A4C;
+    opacity: 0.85;
+    max-width: 500px;
+    margin: 0;
+}
+
+/* Tugmalar joylashuvi */
+.hero__btn-div {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Umumiy tugma dizayni */
+.hero__btn {
+    padding: 14px 28px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+/* 1-chi asosiy tugma (Get Oneflow free) */
+.hero__btn-primary {
+    background-color: #013A4C;
+    color: #ffffff;
+}
+
+.hero__btn-primary:hover {
+    background-color: #02556e;
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 20px rgba(1, 58, 76, 0.3);
+}
+
+/* 2-chi yordamchi tugma (Take a tour) */
+.hero__btn-secondary {
+    background-color: transparent;
+    color: #013A4C;
+    border-color: #013A4C;
+}
+
+.hero__btn-secondary:hover {
+    background-color: #013A4C;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 20px rgba(1, 58, 76, 0.2);
+}
+
+/* --- RESPONSIVE (Mobil va planshetlar uchun) --- */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 80vh;
+        padding: 100px 0 60px 0;
+        text-align: center;
+    }
+
+    .hero__container {
+        margin: 0 auto;
+    }
+
+    .hero__box {
+        align-items: center;
+    }
+
+    .hero__box-title {
+        font-size: 38px;
+    }
+
+    .hero__box-text {
+        font-size: 16px;
+    }
+
+    .hero__btn-div {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .hero__btn {
+        width: 100%;
+    }
 }
