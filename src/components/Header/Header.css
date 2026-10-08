@@ -20,10 +20,12 @@
     align-items: center;
     justify-content: space-between;
 }
-.header__logo{
+
+.header__logo {
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
-.header__logo:hover{
+.header__logo:hover {
     transform: scale(1.1);
 }
 
@@ -44,11 +46,12 @@
     line-height: 20px;
     text-decoration: none;
     color: #013A4C;
-    transition: color 0.2s ease, opacity 0.2s ease;
+    display: inline-block;
+    transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
 }
 
 .header__item-link:hover {
-    transform: scale(1.8);
+    transform: scale(1.1);
     color: black;
     opacity: 1;
 }
@@ -69,7 +72,6 @@
     border: 1px solid #ddd;
     border-radius: 9px;
     cursor: pointer;
-    transition: all 0.3s ease;
     background: linear-gradient(#FFD063 0 0) no-repeat calc(200% - var(--p, 0%)) 100% / 200% var(--p, 0.2em);
     transition: 0.3s var(--t, 0s), background-position 0.3s calc(0.3s - var(--t, 0s)), border-color 0.3s;
 }
@@ -85,19 +87,61 @@
     cursor: pointer;
     transition: transform 0.3s ease;
 }
-
 .header__svg-globus:hover {
     transform: rotate(45deg) scale(1.1);
 }
 
+/* --- BARS (Burger menu dizayni) --- */
+.bars {
+    display: none; /* Desktopda ko'rinmaydi */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: #013A4C;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
 @media (max-width: 900px) {
+    .bars {
+        display: flex; 
+    }
+
     .header__list {
-        display: none; 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 30px 0;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+        /* Standart holatda yashirinish uchun (JavaScript orqali ochish uchun 'active' klassi qo'shiladi) */
+        transform: translateY(-150%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    /* JavaScript yordamida menyuni ochish uchun `.header__list.active` klassi qo'shiladi */
+    .header__list.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 650px) {
     .header__box-btn {
-        display: none;
+        display: none; /* Juda kichik ekranlarda tugmalar menyu ichiga yoki yashirinadi */
     }
 }
