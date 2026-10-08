@@ -4,7 +4,9 @@ const Hero = () => {
   return (
     <section className='hero'>
       <div className="container">
-        
+        <div className="hero__container">
+          
+        </div>
       </div>
     </section>
     
