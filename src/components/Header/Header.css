@@ -29,6 +29,13 @@
     transform: scale(1.1);
 }
 
+/* Desktopda nav yonma-yon turadi */
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
 .header__list {
     display: flex;
     gap: 28px;
@@ -91,9 +98,8 @@
     transform: rotate(45deg) scale(1.1);
 }
 
-/* --- BARS (Burger menu dizayni) --- */
 .bars {
-    display: none; /* Desktopda ko'rinmaydi */
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 25px;
@@ -109,12 +115,13 @@
     transition: 0.3s ease;
 }
 
+/* --- RESPONSIVE (Mobil versiya) --- */
 @media (max-width: 900px) {
     .bars {
         display: flex; 
     }
 
-    .header__list {
+    .header__nav {
         position: absolute;
         top: 100%;
         left: 0;
@@ -123,26 +130,33 @@
         flex-direction: column;
         align-items: center;
         gap: 20px;
-        padding: 30px 0;
+        padding: 30px 20px;
         box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
-        /* Standart holatda yashirinish uchun (JavaScript orqali ochish uchun 'active' klassi qo'shiladi) */
         transform: translateY(-150%);
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s ease;
     }
 
-    /* JavaScript yordamida menyuni ochish uchun `.header__list.active` klassi qo'shiladi */
-    .header__list.active {
+    /* Burger bosilganda menyu va tugmalar birga ochiladi */
+    .header__nav.active {
         transform: translateY(0);
         opacity: 1;
         visibility: visible;
     }
-}
 
-@media (max-width: 650px) {
-    .header__box-btn {
-        display: none;
+    .header__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
-} 
-    
+
+    .header__box-btn {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .header__btn {
+        width: 100%;
+    }
+}
