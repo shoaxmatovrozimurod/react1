@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="container">
         <div className="hero__container">
           <div className="hero__box">
-            
+            <h2 className='hero__box-title'></h2>
           </div>
 
         </div>
