@@ -10,7 +10,7 @@ const Hero = () => {
             <h2 className='hero__box-title'>Work wonders</h2>
             <p className='hero__box-text'>Be more effective with smart contracts that make work faster, and life easier.</p>
             <div className="hero__btn-div">
-              
+              <button></button>
             </div>
           </div>
 
