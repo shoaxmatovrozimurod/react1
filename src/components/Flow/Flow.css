@@ -1,0 +1,53 @@
+.flow {
+    background-color: #013A4C;
+    width: 100%;
+}
+
+.flow__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.flow__title {
+    padding-top: 34px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 38px;
+    letter-spacing: 0.7px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+
+.flow__img-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.flow__img {
+    width: 100%;
+    max-width: 1111px; 
+    height: auto;
+    object-fit: contain;
+    margin-top: 22px;
+    margin-bottom: 32px;
+}
+
+@media (max-width: 768px) {
+    .flow__title {
+        font-size: 20px;
+        line-height: 28px;
+        padding-top: 25px;
+    }
+
+    .flow__img {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+}
