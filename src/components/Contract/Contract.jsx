@@ -4,7 +4,9 @@ const Contract = () => {
   return (
     <section className='contract'>
         <div className="container">
-            
+            <div className="contract__container">
+                
+            </div>
         </div>
     </section>
   )
