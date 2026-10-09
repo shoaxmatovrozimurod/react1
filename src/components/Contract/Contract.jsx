@@ -2,7 +2,11 @@ import React from 'react'
 
 const Contract = () => {
   return (
-    <div>Contract</div>
+    <section className='contract'>
+        <div className="container">
+            
+        </div>
+    </section>
   )
 }
 
