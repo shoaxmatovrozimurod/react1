@@ -102,6 +102,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    text-align: right
 }
 
 .create__main-box-sn-text {
