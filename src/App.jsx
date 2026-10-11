@@ -3,6 +3,8 @@ import '../src/App.css'
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
 import Flow from './components/Flow/Flow'
+import Contract from './components/Contract/Contract'
+import Create from './components/Create/Create'
 
 const App = () => {
   return (
@@ -10,6 +12,8 @@ const App = () => {
          <Header />
          <Hero />
          <Flow />
+         <Contract />
+         <Create />
     </div>
   )
 }
