@@ -5,6 +5,7 @@ import Hero from './components/Hero/Hero'
 import Flow from './components/Flow/Flow'
 import Contract from './components/Contract/Contract'
 import Create from './components/Create/Create'
+import Pressplay from './components/Pressplay'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
          <Flow />
          <Contract />
          <Create />
+         <Pressplay />
     </div>
   )
 }
