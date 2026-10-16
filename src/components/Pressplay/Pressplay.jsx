@@ -1,8 +1,9 @@
 import React from 'react'
-import IMG from "./images"
+import IMG from "./images/img.png"
 
 const Pressplay = () => {
   return (
+    <section></section>
     
   )
 }
