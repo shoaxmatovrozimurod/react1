@@ -6,6 +6,7 @@ import Flow from './components/Flow/Flow'
 import Contract from './components/Contract/Contract'
 import Create from './components/Create/Create'
 import Pressplay from './components/Pressplay/Pressplay'
+import Smart from "./components/Smart/Smart"
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
          <Contract />
          <Create />
          <Pressplay />
+         <Smart />
     </div>
   )
 }
