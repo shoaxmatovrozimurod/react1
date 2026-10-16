@@ -14,7 +14,19 @@ const Smart = () => {
                             <img src={Icn} alt="icn" />
                             <h3 className='smart__item-title'>Forget friction</h3>
                             <p className='smart__item-text'>Experience a truly digital contract process that makes creating, signing, and managing agreements quick, smooth, and effortless. Contracts without trickery.</p>
-
+                            <button className='smart__item-btn '>Take the tour</button>
+                        </li>
+                         <li className='smart__item'>
+                            <img src={Icn} alt="icn" />
+                            <h3 className='smart__item-title'>Forget friction</h3>
+                            <p className='smart__item-text'>Experience a truly digital contract process that makes creating, signing, and managing agreements quick, smooth, and effortless. Contracts without trickery.</p>
+                            <button className='smart__item-btn '>Take the tour</button>
+                        </li>
+                         <li className='smart__item'>
+                            <img src={Icn} alt="icn" />
+                            <h3 className='smart__item-title'>Forget friction</h3>
+                            <p className='smart__item-text'>Experience a truly digital contract process that makes creating, signing, and managing agreements quick, smooth, and effortless. Contracts without trickery.</p>
+                            <button className='smart__item-btn '>Take the tour</button>
                         </li>
                     </ul>
                 </div>
