@@ -3,7 +3,9 @@ import IMG from "./images/img.png"
 
 const Pressplay = () => {
   return (
-    <section></section>
+    <section className='pressplay'>
+          <img src= {IMG} alt="rasim pressplay" />
+    </section>
     
   )
 }
