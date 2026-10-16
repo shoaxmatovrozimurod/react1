@@ -1,8 +1,9 @@
 import React from 'react'
+import IMG from "./images"
 
 const Pressplay = () => {
   return (
-    <div>Pressplay</div>
+    
   )
 }
 
