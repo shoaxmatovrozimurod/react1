@@ -7,6 +7,7 @@ import Contract from './components/Contract/Contract'
 import Create from './components/Create/Create'
 import Pressplay from './components/Pressplay/Pressplay'
 import Smart from "./components/Smart/Smart"
+import Person from './components/Person/Person'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
          <Create />
          <Pressplay />
          <Smart />
+         <Person />
     </div>
   )
 }
