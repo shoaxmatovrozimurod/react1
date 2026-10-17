@@ -34,7 +34,6 @@ const Smart = () => {
                             <button className='smart__block-btn'>Take the tour</button>
                         </div>
 
-                        {/* 3-blok: O'ng tarafda */}
                         <div className='smart__block smart__block--right'>
                             <div className='smart__icon-box'>
                                 <img src={Icn} alt="icon" />

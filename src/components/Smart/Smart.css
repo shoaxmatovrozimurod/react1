@@ -1,15 +1,15 @@
 .smart {
-    /* Rasm to'g'ridan-to'g'ri CSS'dan chaqirildi */
     background-image: url('./images/qol.png');
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: 100% auto; /* Eniga to'liq 100%, bo'yiga esa rasm proporsiyasiga qarab cho'ziladi */
-    background-color: #fceceb; /* Och pushti fon */
+    background-size: 100% auto; 
+    background-color: #fceceb; 
     padding: 100px 0 250px 0;
     position: relative;
-    width: 100%;
+    width: 1200px;
+    display: block;
+    align-items: center;
 }
-
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -22,7 +22,6 @@
     align-items: center;
 }
 
-/* Sarlavha */
 .smart__title {
     font-size: 44px;
     font-weight: 700;
@@ -34,7 +33,6 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-/* Bloklar strukturasi */
 .smart__content {
     display: flex;
     flex-direction: column;
@@ -42,7 +40,6 @@
     width: 100%;
 }
 
-/* Bloklar umumiy stili */
 .smart__block {
     max-width: 320px;
     display: flex;
@@ -51,18 +48,15 @@
     transition: transform 0.3s ease;
 }
 
-/* Figmadagi chap va o'ng joylashuv */
 .smart__block--right {
     align-self: flex-end;
     margin-right: 100px;
 }
-
 .smart__block--left {
     align-self: flex-start;
     margin-left: 100px;
 }
 
-/* Icon qutisi */
 .smart__icon-box {
     width: 44px;
     height: 44px;
@@ -81,7 +75,6 @@
     object-fit: contain;
 }
 
-/* Blok sarlavhasi */
 .smart__block-title {
     font-size: 20px;
     font-weight: 700;
@@ -89,7 +82,6 @@
     margin-bottom: 10px;
 }
 
-/* Matn */
 .smart__block-text {
     font-size: 14px;
     line-height: 1.6;
@@ -97,7 +89,6 @@
     margin-bottom: 20px;
 }
 
-/* Tugma */
 .smart__block-btn {
     background-color: #0b1a30;
     color: #ffffff;
@@ -110,7 +101,6 @@
     transition: all 0.25s ease;
 }
 
-/* Hover effektlari */
 .smart__block:hover {
     transform: translateY(-5px);
 }
@@ -119,9 +109,6 @@
     background-color: #1d2d44;
     box-shadow: 0 4px 12px rgba(11, 26, 48, 0.3);
 }
-
-/* --- RESPONSIVLIK --- */
-
 @media screen and (max-width: 992px) {
     .smart__block--right,
     .smart__block--left {
@@ -129,7 +116,6 @@
         margin-right: 0;
     }
 }
-
 @media screen and (max-width: 768px) {
     .smart {
         padding: 60px 0 100px 0;
