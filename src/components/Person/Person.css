@@ -4,3 +4,20 @@
     width: 1200px;
     height: 700px;
 }
+.person__title{
+    color: #F2DCE4;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 73px;
+    line-height: 78px;
+    letter-spacing: 2px;
+}
+.person__text{
+    font-family: "Roboto";
+font-weight: 400;
+font-size: 26px;
+line-height: 32px;
+letter-spacing: 0.5px;
+color: #ffffff;
+
+}
