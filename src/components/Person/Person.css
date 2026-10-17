@@ -1,4 +1,6 @@
 .person{
     background-image: url(../Person/images/play.png);
-    
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 700px;
 }
