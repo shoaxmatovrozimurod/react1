@@ -29,7 +29,6 @@
     transform: scale(1.1);
 }
 
-/* Desktopda nav yonma-yon turadi */
 .header__nav {
     display: flex;
     align-items: center;

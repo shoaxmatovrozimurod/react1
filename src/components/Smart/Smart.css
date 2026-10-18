@@ -10,12 +10,6 @@
     display: block;
     align-items: center;
 }
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
 .smart__container {
     display: flex;
     flex-direction: column;
