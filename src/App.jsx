@@ -9,6 +9,7 @@ import Pressplay from './components/Pressplay/Pressplay'
 import Smart from "./components/Smart/Smart"
 import Person from './components/Person/Person'
 import Word from './components/Word/Word'
+import Tools from './components/Tools/Tools'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
          <Smart />
          <Person />
          <Word />
+         <Tools />
     </div>
   )
 }
