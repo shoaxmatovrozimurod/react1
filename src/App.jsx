@@ -10,6 +10,9 @@ import Smart from "./components/Smart/Smart"
 import Person from './components/Person/Person'
 import Word from './components/Word/Word'
 import Tools from './components/Tools/Tools'
+import Trick from './components/Trick/Trick'
+import Article from './components/Article/Article'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
   return (
@@ -24,6 +27,9 @@ const App = () => {
          <Person />
          <Word />
          <Tools />
+         <Trick />
+         <Article />
+         <Footer />
     </div>
   )
 }
