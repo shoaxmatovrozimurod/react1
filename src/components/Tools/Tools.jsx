@@ -4,7 +4,9 @@ import './Tools.css'
 const Tools = () => {
   return (
     <section className='tools'>
-        
+        <div className="container">
+            
+        </div>
     </section>
   )
 }
